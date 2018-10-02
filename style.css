@@ -24,10 +24,26 @@ body{
 .navbar-brand:hover{
   color: rgb(175, 175, 175) !important;
 }
+
+.dropdown-menu{
+    background-color: red;
+    background-image: none;
+}
+
 /* Images */
 img{
     width:100% !important;
     height:100% !important;
+}
+
+.active, .panel:hover{
+    border-color:#0BADA6;
+    border-style: solid; 
+}
+
+.vizualization{
+    width:50% !important;
+    height:50% !important;
 }
 
 /* Title Class  */
@@ -46,7 +62,7 @@ p{
 .box {
     margin-top: 60px; 
     margin-bottom: 62px; 
-    padding: 10px 20px 10px; 
+    padding: 10px 20px 15px; 
     color:black;
     background-color: white; 
 
