@@ -9,8 +9,8 @@
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script src="main.js"></script>
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
@@ -30,7 +30,7 @@
   <!-- Navigation Section -->
   <div class="navigation">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" style="background-color: #0BADA6;" href="#">Latitude</a>
+      <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">Latitude</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -43,17 +43,17 @@
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Max Temperature</a>
-              <a class="dropdown-item" href="#">Humidity</a>
-              <a class="dropdown-item" href="#">Cloudiness</a>
-              <a class="dropdown-item" href="#">Wind Speed</a>
+              <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Comparison</a>
+            <a class="nav-link" href="comparisons.html">Comparison</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Data</a>
+            <a class="nav-link" href="data.html">Data</a>
           </li>
 
         </ul>
@@ -61,43 +61,70 @@
     </nav>
   </div>
   <!-- Content Section -->
-
-
-    <!--Normally these medium columns go full wide on small screen sizes-->
-<div class="container">
+  <div class="container">
     <div class="row">
       <div class="col-lg-7 col-md-12">
+        <!-- Left box  -->
         <div class="box">
           <h3 class="title">Summary: Latitude vs. X</h3>
           <hr>
-          <img src="Resources/assets/images/Fig1.png"  id="main_images" class="rounded float-left" alt="Placeholder">
-          <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-          <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+          <img src="Resources/assets/images/Fig1.png" class="rounded float-left" alt="Max Temperature Graph">
+          <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+            accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over
+            500 cities.</p>
+          <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+            Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
+            source data and visualizations created as part of the analysis, as well as explanations and descriptions of
+            any trends and correlations witnessed.</p>
         </div>
       </div>
       <div class="col-lg-5 col-md-12">
+        <!-- Right Box -->
         <div class="box">
           <h5 class="title">Visualizations</h5>
           <hr>
-          <div class="row">
-          <img class="visualizations" src="Resources/assets/images/Fig1.png">
-          <img class="visualizations" src="Resources/assets/images/Fig2.png">
-          <img class="visualizations" src="Resources/assets/images/Fig3.png">
-          <img class="visualizations" src="Resources/assets/images/Fig4.png">
-        </div>
+
+
+          <div class="container">
+              <div class="row">
+              <div class="col-6">
+              <a href="max_temperature.html">
+                  <img src="Resources/assets/images/Fig1.png" alt="Max Temperature Image">
+              </a>
+               </div>
+               <div class="col-6">
+              <a href="humidity.html">
+                <img src="Resources/assets/images/Fig2.png" alt="Humidity Graph">
+              </a>
+              </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-6">
+              <a href="cloudiness.html">
+                  <img src="Resources/assets/images/Fig3.png" alt="Cloudiness Graph">
+              </a>
+              </div>
+              <div class="col-6">
+              <a href="wind_speed.html">
+                  <img src="Resources/assets/images/Fig4.png" alt="Wind Speed Graph">
+              </a>
+              </div>
+
+
+</div>
+          </div>
+
+
         </div>
       </div>
     </div>
   </div>
-
-
   <!-- Footer Section -->
-<footer>
-
-  <div class="footer">Copyright &copy; Gabriela Cantu 2018</div>
-
+  <footer>
+    <div class="footer">Copyright &copy; Gabriela Cantu 2018</div>
   </footer>
-
 </body>
 
 </html>
+<!-- class="col-lg-6 col-md-3 col-sm-3 col-xs-6"  -->

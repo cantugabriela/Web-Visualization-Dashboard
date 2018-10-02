@@ -9,40 +9,35 @@ body{
 
 .navigation .navbar-brand{
     color: white; 
-    margin: inherit; 
+    margin-left: 30px; 
     padding: inherit; 
     font-weight: bold; 
     background-color: #0BADA6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .navbar{
     background-color: white; 
-    font-size: 20px; 
+    font-size: 15px; 
 }
 
-.container{
-    margin: auto; 
+.navbar-brand:hover{
+  color: rgb(175, 175, 175) !important;
+}
+/* Images */
+img{
+    width:100% !important;
+    height:100% !important;
 }
 
-#main_images{
-    width:50%;
-    height:50%;
-}
-
-.visualizations{
-    width:50%;
-    height: 50%;
-}
-/* Fix this  */
+/* Title Class  */
 .title{
-    color: #0BADA6 !important;  
+    color: #0BADA6;  
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder; 
     padding-top: 25px; 
 }
-
-
-
+/* Paragraph */
 p{
  color: #6D8092;
  font-family: Arial, Helvetica, sans-serif;
@@ -58,7 +53,6 @@ p{
   }
 
 /* Footer */
-
 footer{
 background-color: #666666; 
 border-top-style: solid; 
@@ -76,17 +70,17 @@ width: 100%;
 padding-top: 15px; 
 }
 
+.table{
+    font-size: 15px; 
+    border-top-color: white !important; 
+}
+
 /* Media Queries */
-@media(max-width: 768px){
+@media(max-width: 992px){
 .navbar-expand-lg{
 background-color: #0BADA6 !important;
 }
-
-a .nav-link{
-    background-color: white; 
-
-}
-.visualizations{
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr))
+.navbar{
+    max-height: none; 
 }
 }
