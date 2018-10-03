@@ -25,10 +25,6 @@ body{
   color: rgb(175, 175, 175) !important;
 }
 
-.dropdown-menu{
-    background-color: red;
-    background-image: none;
-}
 
 /* Images */
 img{
@@ -44,6 +40,13 @@ img{
 .vizualization{
     width:50% !important;
     height:50% !important;
+}
+
+.active, .dropdown-menu .dropdown-item:active a:hover{
+    background-color: #0BADA6 !important; 
+}
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
+    background-color: #0BADA6 !important; 
 }
 
 /* Title Class  */
@@ -99,4 +102,9 @@ background-color: #0BADA6 !important;
 .navbar{
     max-height: none; 
 }
+.navbar ul li{
+    background-color: white; 
 }
+
+}
+
