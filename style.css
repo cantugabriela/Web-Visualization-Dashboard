@@ -6,7 +6,6 @@ body{
 .navbar{
     max-height: 57px; 
 }
-
 .navigation .navbar-brand{
     color: white; 
     margin-left: 30px; 
@@ -15,38 +14,43 @@ body{
     background-color: #0BADA6;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 .navbar{
     background-color: white; 
     font-size: 15px; 
 }
+.active, .dropdown-menu .dropdown-item:active a:hover{
+    background-color:#E7E7E7!important; 
+}
+.dropdown-item{
+    color: #6D8092 !important; 
+}
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
+    background-color:#E7E7E7 !important; 
+}
+.dropdown-menu{
+    color: #6D8092;
+    font-size: 15px; 
+}
+.nav-link:hover{
+    background-color:#E7E7E7 !important;
+   }
 
 .navbar-brand:hover{
-  color: rgb(175, 175, 175) !important;
+color: rgb(175, 175, 175) !important;
 }
-
-
 /* Images */
 img{
     width:100% !important;
     height:100% !important;
 }
-
 .active, .panel:hover{
     border-color:#0BADA6;
     border-style: solid; 
+    
 }
-
 .vizualization{
     width:50% !important;
     height:50% !important;
-}
-
-.active, .dropdown-menu .dropdown-item:active a:hover{
-    background-color: #0BADA6 !important; 
-}
-.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
-    background-color: #0BADA6 !important; 
 }
 
 /* Title Class  */
@@ -56,12 +60,13 @@ img{
     font-weight: bolder; 
     padding-top: 25px; 
 }
-/* Paragraph */
+/* Paragraph Element */
 p{
  color: #6D8092;
  font-family: Arial, Helvetica, sans-serif;
  font-size: 17px; 
 }
+/* Box Class */
 .box {
     margin-top: 60px; 
     margin-bottom: 62px; 
@@ -70,7 +75,11 @@ p{
     background-color: white; 
 
   }
-
+/* Table */
+  .table{
+    font-size: 15px; 
+    border-top-color: white !important; 
+}
 /* Footer */
 footer{
 background-color: #666666; 
@@ -88,12 +97,6 @@ bottom: 0;
 width: 100%;
 padding-top: 15px; 
 }
-
-.table{
-    font-size: 15px; 
-    border-top-color: white !important; 
-}
-
 /* Media Queries */
 @media(max-width: 992px){
 .navbar-expand-lg{
@@ -101,10 +104,23 @@ background-color: #0BADA6 !important;
 }
 .navbar{
     max-height: none; 
+    padding: inherit;
 }
-.navbar ul li{
-    background-color: white; 
+.navbar div{
+    margin: inherit; 
+    background-color: white;  
+}
+.navbar-brand{
+    padding: 10px !important; 
 }
 
+button{
+    margin-right: 30px; 
 }
+button:focus {
 
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focusring-color;
+    
+    }
+}
